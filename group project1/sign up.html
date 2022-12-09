@@ -1,0 +1,75 @@
+
+<style>
+
+  input:focus{
+    background-color: teal;
+    outline: none;
+  }
+
+input:focus{
+  background-color: rgb(102, 64, 14);
+}
+
+</style>
+
+  
+
+<body>
+ 
+
+  <div>
+    <form>
+
+      <h2>Patient contact Details</h2>
+
+      <input type="text" name="fullName" placeholder="Full Name" >
+      <br>
+      <input type="text" name="Patient Id if exist" placeholder="Patient Id if exist" >
+      <br>
+      <input type="number" name="contactNumber" placeholder="Contact Number" min="6666666666" max="9999999999">
+      <br>
+
+      <input type="email" name="emailId" placeholder="Enter email id">
+      <br>
+<hr>
+      <input type="text" name="HouseNumber" placeholder="House Number" >
+      <br>
+      <input type="text" name="Street" placeholder="Street" >
+      <br>
+      <input type="text" name="Area" placeholder="Area" >
+      <br>
+      <label for="cars">Choose a district:</label>
+
+      <select name="Choose" id="district">
+        <option value="Allahabad">Allahabad</option>
+        <option value="Lucknow">Lucknow</option>
+        <option value="Delhi">Delhi</option>
+        <option value="Humberg">Humberg</option>
+      </select>
+<hr>
+      <input type="checkbox" id="test1" name="test1" value="CBC">
+      <label for="test1">CBC</label><br>
+      <input type="checkbox" id="test2" name="test2" value="CompleteYourUrine">
+      <label for="test2"> Complete your urine</label><br>
+      <input type="checkbox" id="test3" name="test3" value="LipidProfile">
+      <label for="test3"> Lipid Profile</label><br>
+      <input type="checkbox" id="test4" name="test4" value="ths">
+      <label for="test3"> Thyroid Stimulating Hormones</label><br><br>
+      <hr>
+      <p>Do you want a hard copy ofthe report also</p>
+        <input type="radio" id="report1" name="report" value="Yes">
+        <label for="html">Yes</label><br>
+        <input type="radio" id="report2" name="report" value="No">
+        <label for="css">No</label><br>
+      <hr>
+      <label for="pickup">Pick UP date and time</label>
+      <input type="datetime-local" id="birthdaytime" name="birthdaytime">
+      
+      <button>Reset</button>
+      <button>Submit</button>
+
+    </form>
+  </div>
+
+</body>
+

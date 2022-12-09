@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>LAb1_FrontEnd</title>
+  <style>
+    header {
+      width: 100%;
+    }
+
+    header h1 {
+      /*float: right;*/
+      background-color: rgb(95, 94, 94);
+      text-align: center;
+      color :#f1f1f1;
+      padding: 25px;
+
+    }
+    footer {
+      width: 100%;
+    }
+
+    footer h1 {
+      /*float: right;*/
+      background-color:black;
+      text-align: center;
+      color :#f1f1f1;
+      padding: 25px;
+      font-size: small;
+
+    }
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: grey;
+    }
+
+    li {
+      float: left;
+    }
+
+    li a,
+    .dropbutton {
+      display: inline-block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    li a:hover,
+    .dropdownlist:hover .dropbutton {
+      background-color: black;
+    }
+
+    li.dropdownlist {
+      display: inline-block;
+
+
+    }
+
+    .dropdownlist-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+
+    .dropdownlist-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+
+    .dropdownlist-content a:hover {
+      background-color: #f1f1f1;
+    }
+
+    .dropdownlist:hover .dropdownlist-content {
+      display: block;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Pharmacy</h1>
+
+  </header>
+  <div class="list">
+    <ul>
+      <li><a href="#">Home</a></li>
+
+      <li class="dropdownlist">
+        <a href="javascript:void(0)" class="dropbutton">Our Medicines</a>
+        <div class="dropdownlist-content">
+          <a href="#">Fever</a>
+          <a href="#">Medicine Pains</a>
+          <a href="#">Cold and Cough</a>
+        </div>
+      </li>
+      <li class="dropdownlist">
+        <a href="javascript:void(0)" class="dropbutton">Health Care</a>
+        <div class="dropdownlist-content">
+          <a href="#">Baby Care</a>
+          <a href="#">Skin Care</a>
+          <a href="#">Home Care</a>
+          <a href="#">Personel Care</a>
+          <a href="#">Pet Care</a>
+        </div>
+      </li>
+      <li><a href="#">LabTest</a></li>
+      
+    </ul>
+  </div>
+  <footer>
+    <h1>@copyright. Only for demonstration purpose</h1>
+
+  </footer>
+</body>
+
+</html>
